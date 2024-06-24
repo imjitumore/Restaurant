@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Document</title>
+    <style>
+     
+     #bg
+     {
+        background-image: url(../image/bg.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+     }
+
+     #bg1
+     {
+        background-image: url(../image/section_bg01.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+     }
+
+     #backgrd
+     {
+        background-image: url(../image/section_bg04.png);
+        background-repeat: no-repeat;
+        background-size:130%;
+        background-position: center;
+     }
+     #bkgd
+     {
+        background-image: url(../image/section_bg03.png);
+        background-repeat: no-repeat;
+        background-size:130%;
+        background-position: center;
+     }
+
+     #bkg
+     {
+        background-image: url(../image/section_bg02.png);
+        background-repeat: no-repeat;
+        background-size:130%;
+        background-position: center;
+     }
+
+      #button {
+        position: relative;
+        z-index: 999;
+  
+      }
+
+      #button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:0;
+        background-color: orangered;
+        transition: 0.5s;
+        z-index: -1;
+        border-radius: 8px;
+        transition: 1s;
+       
+    }
+    #button:hover::before{
+        color: white;
+        height: 100%;
+    }
+
+    .blg1
+    {
+        bottom: -40px;
+        right: 0;
+        margin-right: 44px;
+        transition: 1s;
+    }
+
+    .overlay
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        top: 100%;
+        left: 0;
+        transition: 1s;
+
+    }
+
+    .box:hover .overlay
+    {
+        top: 0;        
+    }
+
+    .box
+    {
+        transition: 0.5s;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div class="conatiner-lg flex items-start px-10 py-3 w-[100%] justify-between bg-[#fcfafa] fixed  z-10" >
+      <nav>
+        <img class="h-full" src="../image/logo.png" alt="" />
+      </nav>
+      <ul class="text-md flex gap-8 pt-5">
+        <li class="mx-3 hover:text-orange-600 cursor-pointer">Home</li>
+        <li class="mx-3 hover:text-orange-600 cursor-pointer">Abouts</li>
+        <li class="mx-3 hover:text-orange-600 cursor-pointer">Menu</li>
+        <li class="mx-3 hover:text-orange-600 cursor-pointer">Blog</li> 
+        <li class="mx-3 hover:text-orange-600 cursor-pointer">Contact</li>
+      </ul>
+      <button class=" border-2 text-black py-4 px-12 border-orange-600 rounded-lg hover:text-white" id="button">Online Order</button>
+    </div>
+
+    <div class="container-xl h-[800px] pt-56 flex-col px-32 justify-center" id="bg">
+        <p class="container-md  text-[Orangered]">Discover Your Teste</p>
+        <h1 class="text-black text-[75px] font-bold">We Belive good food <br> offer great smile</h1>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Reiciendis aliquid debitis <br> sed esse, incidunt culpa laboriosam similique expedita.</p>
+        <br>
+        <button class=" border-2 px-14 py-4 rounded-xl bg-[orangered] text-lg text-white cursor-pointer">Resurvation</button>
+    </div>
+
+    <div class="container-xl h-[900px]">
+        <div class="row grid-cols-2 m-10 pt-20 flex justify-between">
+            <div class=" w-[50%] px-10 mt-10">
+                <p class="container-md text-xl  text-[Orangered] py-3 font-semibold">Discover Your Teste</p>
+                <h1 class="text-black text-5xl leading-normal tracking-wider font-bold py-3" style="font-family:'Times New Roman';">We Provide Good Food <br> For Your Family</h1>
+                <p class="text-lg py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum perspiciatis molestiae, quisquam sed quo assumenda illo excepturi vero quidem?</p>
+            
+                <div class="grid-cols-2 flex justify-between px-2 py-10 gap-2 tracking-tighter">
+                    <div class="flex gap-2 px-2">
+                        <img class="w-14" src="../image/chef.png" alt="">
+                        <p class="text-md">Lorem ipsum dolor sit amet, consecte adipisicing corrupti.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <img class="w-14" src="../image/eating.png" alt="">
+                        <p class="text-md">Lorem ipsum dolor sit amet, consecte adipisicing corrupti.</p>
+
+                    </div>
+                </div>
+                <div class="grid-cols-2 flex justify-between  px-2 tracking-tighter py-5 gap-1">
+                    <div class="flex gap-2 px-2">
+                        <img class="w-14" src="../image/chef-hat.png" alt="">
+                        <p class="text-md">Lorem ipsum dolor sit amet, consecte adipisicing corrupti.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <img class="w-14 h-14" src="../image/chef.png" alt="">
+                        <p class="text-md">Lorem ipsum dolor sit amet, consecte adipisicing corrupti.</p>
+    
+                    </div>
+                </div>
+            </div>
+            <div><img class="h-[700px]" src="../image/about.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="containe-xl text-center p-10 " id="bg1">
+        <p class="container-md  text-[Orangered] font-bold text-xl ">Our Offer Menu</p>
+        <h1 class="text-black text-5xl font-bold leading-normal">Some Trendy And Popular <br> Courses Offerd</h1>
+        <div class="flex gap-20 justify-center text-xl my-10  cursor-pointer transition-all ease-in 1s"><button class="hover:bg-[orangered] px-4 py-2 relative">Special</button><button class=" hover:bg-[orangered] px-4 py-2 relative">Lunch</button><button class="hover:bg-[orangered] px-4 py-2 relative">Breakfrist</button><button class="hover:bg-[orangered] px-4 py-2 relative">Dinner</button></div>
+    </div>
+
+
+    <div class="container-xl ">
+        <div class="row flex h-[600px]">
+            <div class="box relative h-[510px] overflow-hidden">
+                <img src="../image/gallery1.png" alt="">
+                <div class="overlay text-center">
+                    <p class="text-[orangered] text-3xl font-bold mt-20">$25</p>
+                    <h1 class="text-white text-6xl font-bold my-5">Delicious Food</h1>
+                    <p class="text-white text-sm my-5">Ut enim ad minim veniam quis nostr.</p>
+                    <button class="my-5 px-10 py-4 rounded-xl bg-[orangered] text-lg text-white cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            <div class="box relative h-[510px] overflow-hidden">
+                <img src="../image/gallery2.png" alt="">
+                <div class="overlay text-center">
+                    <p class="text-[orangered] text-3xl font-bold mt-20">$25</p>
+                    <h1 class="text-white text-5xl font-bold my-5">Delicious Food</h1>
+                    <p class="text-white text-sm my-5">Ut enim ad minim veniam quis nostr.</p>
+                    <button class="my-5 px-10 py-4 rounded-xl bg-[orangered] text-lg text-white cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="box relative h-[255px] overflow-hidden">
+                <img src="../image/gallery3.png" alt="">
+                <div class="overlay text-center">
+                    <p class="text-[orangered] text-xl font-bold mt-5">$25</p>
+                    <h1 class="text-white text-3xl font-bold my-3">Delicious Food</h1>
+                    <p class="text-white text-sm my-5">Ut enim ad minim veniam quis nostr.</p>
+                    <button class="my-3 px-8 py-2 rounded-xl bg-[orangered] text-lg text-white cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            <div class="box relative h-[255px] overflow-hidden">
+                <img src="../image/gallery4.png" alt="">
+                <div class="overlay text-center">
+                    <p class="text-[orangered] text-xl font-bold mt-5">$25</p>
+                    <h1 class="text-white text-3xl font-bold my-3">Delicious Food</h1>
+                    <p class="text-white text-sm my-3">Ut enim ad minim veniam quis nostr.</p>
+                    <button class="my-3 px-8 py-2 rounded-xl bg-[orangered] text-lg text-white cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="container-xl h-[600] py-10">
+        <div class="row grid-cols-2 flex justify-between">
+            <div class="pl-20 w-[50%]">
+                <img class="h-[700px]" src="../image/about2.png" alt="">
+            </div>
+            <div class="w-[50%] py-20 px-16">
+                <p class="container-md text-xl  text-[Orangered] py-3">About Our Restaurant</p>
+                <h1 class="text-black text-5xl font-bold py-10">We Provide good food <br>For Your Family</h1>
+                <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Reiciendis aliquid debitis <br> sed esse, incidunt culpa laboriosam similique expedita.</p>
+                <br>
+                <p class="text-lg py-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Reiciendis aliquid debitis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat temporibus odit harum non animi impedit deserunt eveniet mollitia voluptatum explicabo. <br> sed esse, incidunt culpa laboriosam similique expedita.</p>
+
+                <br>
+                <button class=" border-orange-600 border-2  px-14 py-4 rounded-xl text-lg text-black bg-white cursor-pointer " id="button">Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl h-[600px] text-center" id="backgrd">
+        <p class="container-md text-xl  text-[Orangered]  pt-20">About Our Restaurant</p>
+        <h1 class="text-black text-6xl font-semibold py-5 tracking-wider">Book A Table</h1>
+        <br><br>
+        <div class=" row grid-cols-4 flex bg-white gap-5 items-center justify-center mx-28 py-10 rounded-xl">
+            <div class="row grid-cols-2 flex rounded-xl bg-[#f9f9f9] h-16 justify-center items-center py-5 px-10 my-5">
+                <img class="w-6 h-6 text-center" src="../image/user.png" alt="">
+                <select name="" class="px-5  text-xl font-semibold border-none  bg-[#f9f9f9] text-[#bbb8b8]">
+                <option  class="border-none text-[#272727]">Person </option>
+                <option value="">Person 1</option>
+                <option value="">Person 2</option>
+                <option value="">Person 3</option>
+                <option value="">Person 4</option>
+                <option value="">Person 5</option>
+                </select>
+            </div>
+            <div class="row grid-cols-2 flex rounded-xl bg-[#f9f9f9] h-16 justify-center items-center py-5 px-5 my-5">
+                <img class="w-6 h-6 text-center" src="../image/calendar.png" alt="">
+            <input class="px-4 rounded-md text-xl font-semibold border-none text-[#bbb8b8] bg-[#f9f9f9]" type="date" name="" id="">
+            </div>
+            <div class="row grid-cols-2 flex rounded-xl bg-[#f9f9f9] h-16 justify-center items-center py-5 px-10 my-5">
+                <img class="w-6 h-6 text-center" src="../image/clock.png" alt="">
+                <input class="px-5 rounded-md  text-xl font-semibold border-none bg-[#f9f9f9]" type="time" name="" id="">
+            </div>
+            
+            <button class="my-5 mx-2 px-16 py-4 rounded-lg bg-[orangered] text-lg text-white cursor-pointer">Book Now</button>
+        </div>
+    </div>
+
+    <div class="container-xl text-center py-32">
+        <p class="container-md text-xl  text-[Orangered] py-5">Servicees We Offer</p>
+        <h1 class="text-black text-5xl font-semibold py-5 tracking-wider">Our Best Service</h1>
+        <br><br>
+
+        <div class="row grid-cols-3 flex justify-around mx-16">
+            <div class="box w-[30%] text-center px-12 hover:shadow-lg py-16">
+                <div class="flex justify-center py-5"><img class="w-16 flex justify-center " src="../image/chef.png" alt=""></div>
+                <h1 class="text-3xl">Best Chef</h1>
+                <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laudantium sequi odit sunt quibusdam. Voluptate, beatae repellendus.</p>
+            </div>
+            <div class="w-[30%] px-12 shadow-lg py-16">
+                <div class="flex justify-center py-5">
+                    <img class="w-16 flex justify-center " src="../image/eating.png" alt="">
+                </div>
+                <h1 class="text-3xl">Quality Food</h1>
+                <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laudantium sequi odit sunt quibusdam. Voluptate, beatae repellendus.</p>
+            </div>
+            <div class="box w-[30%] text-center px-12 hover:shadow-lg py-16">
+                <div class="flex justify-center py-5"><img class="w-16 flex justify-center " src="../image/chef.png" alt=""></div>           
+                 <h1 class="text-3xl">Perfect Cook</h1>
+                <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laudantium sequi odit sunt quibusdam. Voluptate, beatae repellendus.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container-xl h-[600px] px-10" id="bkgd">
+        <div class="row grid-cols-2 flex justify-between py-20">
+            <div class="w-[50%]"></div>
+            <div class="w-[50%]"><p class="container-md text-xl  text-[Orangered] py-3 font-semibold">Discover Your Teste</p>
+                <h1 class="text-black text-5xl leading-normal tracking-wider font-bold py-3" style="font-family:'Times New Roman';">We Provide Good Food <br> For Your Family!</h1>
+                <p class="text-lg py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum perspiciatis molestiae, quisquam sed quo assumenda illo excepturi vero quidem?</p>
+                <br>
+                <input class="w-96 h-14 text-xl px-10 border-white border-b-4"  type="email" name="" id="" placeholder="Your Email">
+                <button class=" text-small leading-loose border-none tracking-widest w-40 h-14 bg-[orangered] text-white">Subscribe</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-xl h-[700px] text-center my-20">
+        <p class="container-md text-xl  text-[Orangered]  pt-20 py-4">Our New Blog News</p>
+        <h1 class="text-black text-5xl font-semibold py-5 tracking-wider">Our Recnet News</h1>
+        <div class="row grid-cols-3 flex justify-evenly pl-16 items-center">
+            <div class="w-[30%] relative">
+                <img src="../image/blog1.png" alt="">
+                <div class="blg1 bg-[#f9f9f9] absolute py-6 rounded-lg px-10 ml-8 hover:bg-[orangered] hover:text-white">
+                    <p class="flex justify-start">23 Dec 2023</p>
+                    <p class="text-xl text-start font-bold">Addiction when food plate Becomes</p>
+                </div>
+               
+            </div>
+            <div class="w-[30%] relative">
+                <img src="../image/blog2.png" alt="">
+                <div class="blg1 bg-[#f9f9f9] absolute py-6 rounded-lg px-10 ml-10 hover:bg-[orangered] hover:text-white">
+                    <p class="flex justify-start">23 Dec 2023</p>
+                    <p class="text-xl text-start font-bold">Addiction when food plate Becomes</p>
+                </div>
+            </div>
+            <div class="w-[30%] relative">
+                <img src="../image/blog3.png" alt="">
+                <div class="blg1 bg-[#f9f9f9] absolute py-6 rounded-lg px-10 ml-10 hover:bg-[orangered] hover:text-white">
+                    <p class="flex justify-start">23 Dec 2023</p>
+                    <p class="text-xl text-start font-bold">Addiction when food plate Becomes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl h-[600px]" id="bkg">
+        <div class="row grid-cols-3 flex justify-around pt-10">
+            <div class="flex justify-center items-center">
+                <img class="" src="../image/logo2_footer.png" alt="">
+            </div>
+            <div class="row grid-cols-2 flex justify-between gap-10 items-center pt-10">
+                <dl class="text-white pt-10 cursor-pointer">
+                    <dt class="text-xl hover:text-[orangered] c">Nagivation</dt><br>
+                    <dd class="py-2 hover:text-[orangered]">Home</dd>
+                    <dd class="py-2 hover:text-[orangered]">Events</dd>
+                    <dd class="py-2 hover:text-[orangered]">Testimonial</dd>
+                    <dd class="py-2 hover:text-[orangered]">Categories</dd>
+                    <dd class="py-2 hover:text-[orangered]">Contats</dd>
+                </dl>
+
+                <dl class="text-white">
+                    <dt class="text-xl">Useful Links</dt>
+                    <br>
+                    <dd class="py-2 hover:text-[orangered]">Registration</dd>
+                    <dd class="py-2 hover:text-[orangered]">Login</dd>
+                    <dd class="py-2 hover:text-[orangered]">Policy</dd>
+                    <dd class="py-2 hover:text-[orangered]">Terms & conditions</dd>
+                
+                </dl>
+            </div>
+            <div class="mt-28">
+                <p class="text-xl text-white justify-center items-center">Instagram Feeds</p>
+                <br>
+                <div class="row flex grid-cols-3">
+                    <img src="../image/instagram1.png" alt="">
+                    <img src="../image/instagram2.png" alt="">
+                    <img src="../image/instagram3.png" alt="">
+                </div>
+
+                <div class="row flex grid-cols-3">
+                    <img src="../image/instagram4.png" alt="">
+                    <img src="../image/instagram5.png" alt="">
+                    <img src="../image/instagram6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
